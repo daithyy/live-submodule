@@ -27,7 +27,7 @@ namespace IMIRT.SaveSystem
             
             MemoryStream memoryStream = new MemoryStream(Convert.FromBase64String(dataString));
             
-            return (T)formatter.Deserialize(memoryStream);
+            return (T) formatter.Deserialize(memoryStream);
         }
     }
 }
